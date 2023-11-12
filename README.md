@@ -47,7 +47,7 @@ jupyter lab
 
 1. Run the notebook
 
-## Managing the Environemtn
+## Managing the Environment
 
 The files in `scripts/` are used to manage the virtual environment. They can be
 run in the following manner.
