@@ -15,6 +15,8 @@ git clone https://github.com/CWRU-SUSD-Group-Project/sus-data-science.git
 bash install.sh
 ```
 
+1. Download data from Google Drive (see DATA folder) and move it into `data/`
+
 ## Running the Project
 
 1. Activate the virtual environment
