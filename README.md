@@ -9,19 +9,19 @@ Group project for Structured and Unstructured Data course
 git clone https://github.com/CWRU-SUSD-Group-Project/sus-data-science.git
 ```
 
-1. Run the installation script
+2. Run the installation script
 
 ```bash
 bash install.sh
 ```
 
-1. Create the virtual environment
+3. Create the virtual environment
 
 ```bash
 bash reinstall-venv.sh
 ```
 
-1. Download data from Google Drive (see DATA folder) and move it into `data/`
+4. Download data from Google Drive (see DATA folder) and move it into `data/`
 
 ## Running the Project
 
@@ -31,21 +31,21 @@ bash reinstall-venv.sh
 bash scripts/update.sh
 ```
 
-1. Activate the virtual environment
+2. Activate the virtual environment
 
 ```bash
 source .venv/bin/activate
 ```
 
-1. Open Jupyter Lab
+3. Open Jupyter Lab
 
 ```bash
 jupyter lab
 ```
 
-1. Open the notebook
+4. Open the notebook
 
-1. Run the notebook
+5. Run the notebook
 
 ## Managing the Environment
 
