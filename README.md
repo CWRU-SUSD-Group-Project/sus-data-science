@@ -19,6 +19,12 @@ bash install.sh
 
 ## Running the Project
 
+1. Update the virtual environment
+
+```bash
+bash scripts/update.sh
+```
+
 1. Activate the virtual environment
 
 ```bash
