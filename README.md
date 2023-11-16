@@ -49,7 +49,7 @@ git config filter.strip-notebook-output-metadata.smudge "cat"
 4. Set up the virtual environment
 
 ```bash
-python3.11 -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
