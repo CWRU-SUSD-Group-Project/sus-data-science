@@ -51,7 +51,7 @@ git config filter.strip-notebook-output-metadata.smudge "cat"
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 5. Download data from Google Drive (see DATA folder) and move it into `data/`
