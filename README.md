@@ -48,10 +48,21 @@ git config filter.strip-notebook-output-metadata.smudge "cat"
 
 4. Set up the virtual environment
 
+For Mac:
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
+```
+
+For Windows:
+
+```bash
+python -m venv .venv
+Set-ExecutionPolicy Unrestricted -Scope Process
+.venv\Scripts\activate
+python -m pip install -r requirements.txt
 ```
 
 5. Download data from Google Drive (see DATA folder) and move it into `data/`
