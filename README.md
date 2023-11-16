@@ -33,53 +33,43 @@ instructions for future contributions
 git clone https://github.com/CWRU-SUSD-Group-Project/sus-data-science.git
 ```
 
-2. Run the installation script
+2. Change your working directory to the project root
 
 ```bash
-bash install.sh
+cd sus-data-science
 ```
 
-3. Create the virtual environment
+3. Set up git filters
 
 ```bash
-bash reinstall-venv.sh
+git config filter.strip-notebook-output-metadata.clean "python -m jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --ClearMetadataPreprocessor.preserve_nb_metadata_mask kernelspec --ClearMetadataPreprocessor.preserve_nb_metadata_mask name --to=notebook --stdin --stdout --log-level=ERROR"
+git config filter.strip-notebook-output-metadata.smudge "cat"
 ```
 
-4. Download data from Google Drive (see DATA folder) and move it into `data/`
+4. Set up the virtual environment
+
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+5. Download data from Google Drive (see DATA folder) and move it into `data/`
 
 ## Running the Project
 
-1. Update the virtual environment
-
-```bash
-bash scripts/update.sh
-```
-
-2. Activate the virtual environment
+1. Activate the virtual environment
 
 ```bash
 source .venv/bin/activate
 ```
 
-3. Open Jupyter Lab
+2. Open Jupyter Lab
 
 ```bash
 jupyter lab
 ```
 
-4. Open the notebook
+3. Open the notebook
 
-5. Run the notebook
-
-## Managing the Environment
-
-The files in `scripts/` are used to manage the virtual environment. They can be
-run in the following manner.
-
-```bash
-bash scripts/<script-name>.sh
-```
-
-- `reinstall-venv.sh` is used to reinstall the virtual environment
-- `update-requirements.sh` is used to update the `requirements.txt` file
-- `update.sh` is used install/update the packages in `requirements.txt`
+4. Run the notebook
