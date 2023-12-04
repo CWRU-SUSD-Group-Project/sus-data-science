@@ -84,3 +84,5 @@ jupyter lab
 3. Open the notebook
 
 4. Run the notebook
+
+5. Adding more things to do "hello"
