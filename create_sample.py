@@ -22,7 +22,7 @@ def num_lines(file_path) -> int:
     Returns the number of lines in a file.
     """
     with open(file_path, "rb") as f:
-        return sum(1 for _ in f)
+        return sum(1 for _ in f) # TODO check on this
 
 def main() -> None:
     """
