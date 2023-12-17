@@ -65,7 +65,7 @@ Set-ExecutionPolicy Unrestricted -Scope Process
 python -m pip install -r requirements.txt
 ```
 
-5. Download data from Google Drive (see DATA folder) and move it into `data/`
+5. Download data from Google Drive (see DATA folder) and move it into `data/00_original/`
 
 ## Running the Project
 
@@ -84,5 +84,3 @@ jupyter lab
 3. Open the notebook
 
 4. Run the notebook
-
-5. Adding more things to do "hello"
